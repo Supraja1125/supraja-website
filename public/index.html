@@ -1,98 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Supraja Mekala | Resume</title>
+<meta charset="UTF-8">
+<title>Supraja Mekala | Profile Resume</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        background: linear-gradient(120deg, #fdfbfb, #ebedee);
+        color: #333;
+        animation: fadeIn 1.2s ease-in;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 40px;
+        background: #ffffff;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        border-radius: 14px;
+        animation: slideUp 1.2s ease;
+    }
+
+    @keyframes slideUp {
+        from { transform: translateY(40px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    header h1 {
+        font-size: 36px;
+        margin-bottom: 6px;
+        letter-spacing: 1px;
+    }
+
+    header p {
+        margin: 4px 0;
+        font-size: 15px;
+    }
+
+    header a {
+        color: #0077b6;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    header a:hover {
+        text-decoration: underline;
+    }
+
+    section {
+        margin-top: 28px;
+        animation: fadeSection 1.4s ease;
+    }
+
+    @keyframes fadeSection {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    section h2 {
+        font-size: 22px;
+        border-left: 5px solid #0077b6;
+        padding-left: 10px;
+        margin-bottom: 12px;
+        color: #0077b6;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    ul li {
+        margin-bottom: 8px;
+        line-height: 1.6;
+    }
+
+    .skills span {
+        display: inline-block;
+        background: #e3f2fd;
+        color: #0d47a1;
+        padding: 6px 12px;
+        margin: 6px 6px 0 0;
+        border-radius: 20px;
+        font-size: 14px;
+        transition: transform 0.3s ease, background 0.3s;
+    }
+
+    .skills span:hover {
+        transform: scale(1.1);
+        background: #bbdefb;
+    }
+
+    .project {
+        margin-bottom: 15px;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 14px;
+        color: #777;
+    }
+</style>
 </head>
+
 <body>
 
-    <center>
-        <h1>SUPRAJA MEKALA</h1>
+<div class="container">
+
+    <header>
+        <h1>Supraja Mekala</h1>
+        <p>Hyderabad, Telangana</p>
         <p>
-            Hyderabad, Telangana<br>
             📞 +91-6300815165 |
-            ✉️ suprajamekala1125@gmail.com <br>
-            🔗 <a href="https://www.linkedin.com/in/supraja-mekala" target="_blank">LinkedIn</a> |
-            💻 <a href="https://github.com/Supraja1125" target="_blank">GitHub</a>
+            ✉️ suprajamekala1125@gmail.com
         </p>
-        <hr width="80%">
-    </center>
+        <p>
+            <a href="https://www.linkedin.com/in/supraja-mekala" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/Supraja1125" target="_blank">GitHub</a>
+        </p>
+    </header>
 
-    <h2>Career Objective</h2>
-    <p>
-        To strengthen my technical expertise and analytical thinking through opportunities that combine learning,
-        mentorship, and real-world application. I aim to apply my knowledge of programming, data structures, and
-        AI/ML to build impactful, technology-driven solutions while continuing to grow as an adaptable and curious
-        problem-solver.
-    </p>
+    <section>
+        <h2>Career Objective</h2>
+        <p>
+            To strengthen my technical expertise and analytical thinking through opportunities that combine learning,
+            mentorship, and real-world application. I aim to apply my knowledge of programming, data structures, and
+            AI/ML to build impactful, technology-driven solutions while growing as a curious and adaptable problem-solver.
+        </p>
+    </section>
 
-    <h2>Educational Qualifications</h2>
-    <ul>
-        <li>
-            <strong>B.Tech in Information Technology</strong>, VNR VJIET (2023–2027)<br>
-            CGPA: 8.62
-        </li>
-        <li>
-            <strong>Intermediate (MPC)</strong>, Sri Chaitanya Junior Kalashala (2021–2023)<br>
-            Percentage: 94.4%
-        </li>
-        <li>
-            <strong>SSC</strong>, MNR High School (2021)<br>
-            CGPA: 10.00
-        </li>
-    </ul>
+    <section>
+        <h2>Education</h2>
+        <ul>
+            <li><strong>B.Tech (IT)</strong>, VNR VJIET — CGPA: 8.62 (2023–2027)</li>
+            <li><strong>Intermediate (MPC)</strong>, Sri Chaitanya Junior Kalashala — 94.4%</li>
+            <li><strong>SSC</strong>, MNR High School — CGPA: 10.00</li>
+        </ul>
+    </section>
 
-    <h2>Technical Skills</h2>
-    <ul>
-        <li><strong>Programming:</strong> C, C++, Python, Java, R (Basic)</li>
-        <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, Bootstrap, React.js</li>
-        <li><strong>Database:</strong> MySQL, SQL (Basic)</li>
-        <li><strong>Tools:</strong> Git, GitHub, Power BI, Excel, VS Code</li>
-        <li><strong>Coursework:</strong> DSA, DBMS, OS, Data Analysis using Excel</li>
-    </ul>
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <span>C</span><span>C++</span><span>Python</span><span>Java</span>
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>Bootstrap</span><span>React.js</span>
+            <span>MySQL</span><span>Git</span><span>GitHub</span>
+            <span>Power BI</span><span>Excel</span>
+        </div>
+    </section>
 
-    <h2>Projects</h2>
+    <section>
+        <h2>Projects</h2>
 
-    <h3>Blog Application — MERN Stack</h3>
-    <ul>
-        <li>Developed a blogging application with post creation, editing, and commenting features.</li>
-        <li>Implemented category-based filtering and access control using MongoDB and REST APIs.</li>
-    </ul>
+        <div class="project">
+            <strong>Blog Application — MERN Stack</strong>
+            <ul>
+                <li>Developed a blogging platform with post creation, editing, and commenting.</li>
+                <li>Implemented category filtering and access control using MongoDB and REST APIs.</li>
+            </ul>
+        </div>
 
-    <h3>Shopping Application — HTML, CSS, JavaScript</h3>
-    <ul>
-        <li>Built a responsive shopping interface with product listing, cart, and checkout.</li>
-        <li>Used DOM manipulation for dynamic UI updates and interactivity.</li>
-    </ul>
+        <div class="project">
+            <strong>Shopping Application — HTML, CSS, JavaScript</strong>
+            <ul>
+                <li>Built a responsive shopping interface with cart and checkout.</li>
+                <li>Used DOM manipulation for dynamic UI updates.</li>
+            </ul>
+        </div>
 
-    <h3>Movie Ticket Booking System — Python</h3>
-    <ul>
-        <li>Designed a console-based ticket booking system with seat management and cancellation.</li>
-        <li>Used file handling to store and manage booking records.</li>
-    </ul>
+        <div class="project">
+            <strong>Movie Ticket Booking System — Python</strong>
+            <ul>
+                <li>Console-based system with seat management and cancellation.</li>
+                <li>Used file handling for booking records.</li>
+            </ul>
+        </div>
+    </section>
 
-    <h2>Certifications</h2>
-    <ul>
-        <li>Cisco NetAcad – Python (2024), JavaScript (2025)</li>
-        <li>Postman API Fundamentals Student Expert Certification (2025)</li>
-        <li>Python Foundation – Infosys Springboard (2025)</li>
-        <li>MySQL Crash Course – Udemy (2025)</li>
-        <li>Introduction to Generative AI – Google Cloud (2025)</li>
-    </ul>
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li>Cisco NetAcad – Python, JavaScript</li>
+            <li>Postman API Fundamentals Student Expert</li>
+            <li>Python Foundation – Infosys Springboard</li>
+            <li>Introduction to Generative AI – Google Cloud</li>
+        </ul>
+    </section>
 
-    <h2>Hackathons & Competitions</h2>
-    <ul>
-        <li>
-            National Semi-Finalist, <strong>Flipkart GRID 7.0</strong> (2025) – among 1.6 lakh+ participants
-        </li>
-        <li>Participated in coding contests on CodeChef, CodeForces, and LeetCode</li>
-        <li>Winter Coding Contest 4.0 – ACM, VNRVJIET</li>
-    </ul>
+    <section>
+        <h2>Hackathons & Competitions</h2>
+        <ul>
+            <li>National Semi-Finalist – Flipkart GRID 7.0 (1.6 lakh+ participants)</li>
+            <li>CodeChef, CodeForces, LeetCode contests</li>
+            <li>Winter Coding Contest 4.0 – ACM, VNRVJIET</li>
+        </ul>
+    </section>
 
-    <hr>
-    <center>
-        <p>© 2026 Supraja Mekala</p>
-    </center>
+    <footer>
+        © 2026 Supraja Mekala
+    </footer>
+
+</div>
 
 </body>
 </html>
